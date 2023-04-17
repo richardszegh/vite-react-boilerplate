@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": 0,
+    "no-unused-vars": 0,
+    "no-console": 0,
+    "react/jsx-fragments": [1, "syntax"],
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-new-object": "error",
+    "no-else-return": "error",
+    "curly": "error",
+    "import/no-anonymous-default-export": 0,
+    "jsx-a11y/media-has-caption": 0,
+    "@typescript-eslint/array-type": [
+      "warn",
+      {
+        "default": "array"
+      }
+    ],
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
+  },
+  "globals": {
+    "React": "readonly",
+    "JSX": "readonly"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
