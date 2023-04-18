@@ -1,8 +1,16 @@
+import { Helmet } from 'react-helmet-async';
+
 function SignIn() {
   return (
-    <div>
-      <h1>Sign In</h1>
-    </div>
+    <>
+      <Helmet>
+        <title>Sign in</title>
+      </Helmet>
+
+      <div>
+        <h1>Sign In</h1>
+      </div>
+    </>
   );
 }
 
