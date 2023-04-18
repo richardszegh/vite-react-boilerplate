@@ -5,7 +5,13 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), eslint()],
+  plugins: [
+    react(),
+    eslint({
+      // https://github.com/storybookjs/builder-vite/issues/535
+      exclude: ['/virtual:/**'],
+    }),
+  ],
   server: {
     port: 3000,
   },
