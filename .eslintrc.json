@@ -7,22 +7,19 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:compat/recommended",
     "prettier"
   ],
   "rules": {
-    "jsx-a11y/anchor-is-valid": 0,
     "no-unused-vars": 0,
     "no-console": 0,
-    "react/jsx-fragments": [1, "syntax"],
     "no-var": "error",
     "prefer-const": "error",
     "no-new-object": "error",
     "no-else-return": "error",
     "curly": "error",
-    "import/no-anonymous-default-export": 0,
-    "jsx-a11y/media-has-caption": 0,
     "@typescript-eslint/array-type": [
       "warn",
       {
@@ -33,7 +30,15 @@
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-empty-interface": "off",
-    "@typescript-eslint/no-non-null-assertion": "off"
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "react/jsx-fragments": [1, "syntax"],
+    "react/destructuring-assignment": [1, "always"],
+    "react/boolean-prop-naming": 1,
+    "react/function-component-definition": 1,
+    "react/hook-use-state": 1,
+    "react/jsx-no-useless-fragment": 1,
+    "jsx-a11y/media-has-caption": 0,
+    "jsx-a11y/anchor-is-valid": 0
   },
   "env": {
     "browser": true
