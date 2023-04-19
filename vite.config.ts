@@ -8,7 +8,9 @@ export default defineConfig({
   plugins: [
     react(),
     eslint({
-      // https://github.com/storybookjs/builder-vite/issues/535
+      /**
+       * @see {@link https://github.com/storybookjs/builder-vite/issues/535}
+       */
       exclude: ['/virtual:/**'],
     }),
   ],
