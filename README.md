@@ -13,6 +13,8 @@ Core:
 
 Extras:
 
+- Jest
+- React Testing Library
 - Storybook
 - React Query
 - Axios
@@ -54,6 +56,18 @@ npm run typecheck:watch
 Runs TypeScript compiler to check for any type errors - will keep running and watch for file changes _(useful during development)_
 
 ```shell
+npm run test
+```
+
+Runs all Jest tests in `--watch` mode
+
+```shell
+npm run test:ci
+```
+
+Runs all Jest tests in `--ci` mode. Useful for running in CI/CD environments, as the name suggests :)
+
+```shell
 npm run validate:lint
 ```
 
@@ -70,6 +84,12 @@ npm run validate:build
 ```
 
 Alias to `build`
+
+```shell
+npm run validate:test
+```
+
+Alias to `test:ci`
 
 ```shell
 npm run validate:formatting

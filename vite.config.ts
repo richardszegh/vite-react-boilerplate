@@ -6,7 +6,9 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      exclude: [],
+    }),
     eslint({
       /**
        * @see {@link https://github.com/storybookjs/builder-vite/issues/535}
