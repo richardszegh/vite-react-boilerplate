@@ -25,6 +25,10 @@
   "engines": {
     "node": "18"
   },
+  "browserslist": [
+    "defaults",
+    "not op_mini all"
+  ],
   "dependencies": {
     "@storybook/addon-essentials": "^7.0.5",
     "@storybook/addon-interactions": "^7.0.5",
