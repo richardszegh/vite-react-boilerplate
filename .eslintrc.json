@@ -52,5 +52,24 @@
     "react": {
       "version": "detect"
     }
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "./src/__tests__/**",
+        "./src/**/__tests__/**",
+        "./src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+      ],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"],
+      "env": {
+        "jest": true
+      },
+      "settings": {
+        "jest": {
+          "version": 29
+        }
+      }
+    }
+  ]
 }
