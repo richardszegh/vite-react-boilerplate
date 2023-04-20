@@ -1,10 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@/test-utils';
 
-import { App } from './app';
+import { SignIn } from './sign-in';
 
-describe('App', () => {
+describe('SignIn', () => {
   test('renders without error', () => {
-    render(<App />);
+    render(<SignIn />);
 
     const heading = screen.getByRole('heading', {
       name: /Sign In/i,
