@@ -30,9 +30,7 @@ function RouteWrapper({ guard, layout, guardProps }: RouteWrapperProps) {
   return (
     <Guard {...(guard ? { guardProps } : null)}>
       <Layout>
-        {/* <ErrorBoundary> */}
         <Outlet />
-        {/* </ErrorBoundary> */}
       </Layout>
     </Guard>
   );
