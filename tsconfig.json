@@ -21,5 +21,6 @@
     },
     "types": ["vitest/globals"]
   },
+  "include": ["src", ".storybook"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
