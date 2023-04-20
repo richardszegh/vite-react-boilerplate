@@ -60,16 +60,8 @@
         "./src/**/__tests__/**",
         "./src/**/*.{spec,test}.{js,jsx,ts,tsx}"
       ],
-      "plugins": ["jest"],
-      "extends": ["plugin:jest/recommended"],
-      "env": {
-        "jest": true
-      },
-      "settings": {
-        "jest": {
-          "version": 29
-        }
-      }
+      "plugins": ["vitest"],
+      "extends": ["plugin:vitest/recommended"]
     }
   ]
 }
