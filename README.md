@@ -13,7 +13,7 @@ Core:
 
 Extras:
 
-- Jest
+- Vitest
 - React Testing Library
 - Storybook
 - React Query
@@ -59,13 +59,13 @@ npm run typecheck:watch
 npm run test
 ```
 
-- Runs all Jest tests in `--watch` mode
+- Runs all tests in watch mode
 
 ```shell
 npm run test:ci
 ```
 
-- Runs all Jest tests in `--ci` mode. Useful for running in CI/CD environments, as the name suggests :)
+- Runs all tests. Useful for running in CI/CD environments, as the name suggests :)
 
 ```shell
 npm run validate:lint
@@ -165,7 +165,7 @@ _**Important:** never use `npm run preview` to run your app in a production envi
 
 ## Absolute imports
 
-Absolute imports are configured for both Vite and for Jest by default. This means you can do:
+Absolute imports are configured for both source code and for tests by default. This means you can do:
 
 ```typescript
 import { someModule } from '@/utils/some-module.util.ts';
@@ -188,5 +188,5 @@ _**Note:** `@` resolves to the `src` folder._
 - [React](https://react.dev/), [React Router](https://reactrouter.com/en/main)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [React Query](https://tanstack.com/query/latest/)
