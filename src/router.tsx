@@ -14,17 +14,17 @@ const router = createBrowserRouter([
     element: <RouteWrapper guard={AuthGuard} layout={Layout} />,
     children: [
       {
-        path: ROUTE_PATHS.ROOT,
+        path: ROUTE_PATHS.root,
         element: <Home />,
       },
     ],
   },
   {
-    path: ROUTE_PATHS.AUTH,
+    path: ROUTE_PATHS.auth,
     element: <RouteWrapper guard={GuestGuard} layout={Layout} />,
     children: [
       {
-        path: ROUTE_PATHS.SIGN_IN,
+        path: ROUTE_PATHS.signIn,
         element: <SignIn />,
       },
     ],
